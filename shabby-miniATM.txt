@@ -1,0 +1,30 @@
+package shabby;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	  int userpin,pin=786,withdrawalAmount,currentBalance=100000;
+	    Scanner scanner=new Scanner(System.in);
+        System.out.print("Enter your pin :");
+        userpin=scanner.nextInt();
+        if(userpin==786){
+            System.out.println("Welcome your pin is correct.");
+
+        System.out.print("Enter your withdrawalAmount :");
+        withdrawalAmount=scanner.nextInt();
+
+        if(withdrawalAmount<currentBalance){
+            currentBalance=currentBalance-withdrawalAmount;
+            System.out.println("Transaction Successful.");
+            System.out.println("Your current balance is :"+currentBalance);
+        }
+        if(withdrawalAmount>currentBalance){
+            System.out.println("Unsufficient Funds");
+        }
+        }else {
+            System.out.println("Your pin is Incorrect.");
+        }
+    }
+}
