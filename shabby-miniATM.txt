@@ -9,7 +9,7 @@ public class Main {
 	    Scanner scanner=new Scanner(System.in);
         System.out.print("Enter your pin :");
         userpin=scanner.nextInt();
-        if(userpin==786){
+        if(userpin==pin){
             System.out.println("Welcome your pin is correct.");
 
         System.out.print("Enter your withdrawalAmount :");
